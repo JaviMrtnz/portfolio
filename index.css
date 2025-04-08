@@ -512,14 +512,32 @@ body:not(.user-is-tabbing) a:focus {
 
 .client__logos {
     display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .client__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+  }
+  
+  .client__logo {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+  }
+  
+  .client__name {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    text-align: justify;
+  }
 
 @media(max-width: 1240px) {
     .client__logos {
