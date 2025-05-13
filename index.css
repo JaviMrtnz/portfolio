@@ -514,7 +514,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
+    justify-content: left;
     text-align: center;
   }
   
@@ -528,13 +528,13 @@ body:not(.user-is-tabbing) a:focus {
   .client__logo {
     width: 100%;
     height: auto;
-    max-width: 150px;
+    max-width: 250px;
   }
   
   .client__name {
     margin-top: 0.5rem;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1,2rem;
     color: #fff;
     text-align: justify;
   }
@@ -630,3 +630,31 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+.contact .row {
+    display: flex;
+    flex-wrap: wrap; /* Esto permite que los elementos se acomoden en múltiples líneas */
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact__info {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .about__photo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about__photo {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .contact h2 {
+    width: 100%; /* Asegura que el encabezado ocupe toda la anchura de la fila */
+    text-align: left; /* Opcional: para centrar el texto */
+    margin-bottom: 20px; /* Espacio entre el encabezado y los elementos siguientes */
+  }
